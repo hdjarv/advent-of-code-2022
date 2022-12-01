@@ -11,6 +11,8 @@ export const readFileAsString = async (path: PathLike) => await readFile(path, {
 export const numToStr = (n: number): string => `${n}`;
 export const strToNum = (s: string): number => Number.parseInt(s, 10);
 
+export const splitStringIntoNumberArray = (s: string, sep: string = ","): number[] => s.split(sep).map(strToNum);
+
 export const findMinMaxInRange = (
   numbers: number[],
   start: number = 0,

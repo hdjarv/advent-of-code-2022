@@ -1,4 +1,4 @@
-import { EOL, findMinMaxInRange, sortDescending, strToNum, sumRange } from "./lib/utils";
+import { EOL, findMinMaxInRange, sortDescending, splitStringIntoNumberArray, strToNum, sumRange } from "./lib/utils";
 
 function solvePart1(data: number[]): number {
   return findMinMaxInRange(data).max;
@@ -9,9 +9,7 @@ function solvePart2(data: number[]): number {
 }
 
 export default async (input: string) => {
-  const data = input
-    .split(EOL)
-    .map(strToNum)
+  const data = splitStringIntoNumberArray(input, EOL)
     .reduce(
       (result: number[][], value: number) => {
         if (Number.isNaN(value)) {
