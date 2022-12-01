@@ -1,0 +1,22 @@
+{
+  "name": "aoc-2022",
+  "version": "1.0.0",
+  "description": "My Advent of Code 2022 contributions",
+  "author": "Henrik Djärv <henrik@djarv.org>",
+  "license": "MIT",
+  "bin": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdjarv/advent-of-code-2022.git"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "prettier": "^2.7.1",
+    "ts-node": "10.9.1",
+    "typescript": "^4.9.3"
+  }
+}
