@@ -23,7 +23,7 @@ export default async (input: string) => {
       },
       [[]]
     )
-    .map((elfdata: number[]) => sumRange(elfdata));
+    .map((datarow: number[]) => sumRange(datarow));
 
   console.log(`Part 1: The result is: ${solvePart1(data)}`); // 74394 is correct
   console.log(`Part 2: The result is: ${solvePart2(data)}`); // 212836 is correct
