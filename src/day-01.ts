@@ -1,4 +1,4 @@
-import { EOL, findMinMaxInRange, sortDescending, splitStringIntoNumberArray, strToNum, sumRange } from "./lib/utils";
+import { EOL, findMinMaxInRange, sortDescending, splitStringIntoNumberArray, sumRange } from "./lib/utils";
 
 function solvePart1(data: number[]): number {
   return findMinMaxInRange(data).max;
