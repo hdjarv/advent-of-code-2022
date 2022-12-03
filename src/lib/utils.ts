@@ -26,6 +26,10 @@ export const findMinMaxInRange = (
   }
   return { min, max };
 };
+
+export const removeDuplicatesFromArray = <T>(array: T[]): T[] =>
+  array.filter((value, index, input) => input.indexOf(value) === index);
+
 export const sumRange = (numbers: number[], start: number = 0, end: number = numbers.length): number => {
   let result = 0;
   for (let i = start; i < end; i++) {
