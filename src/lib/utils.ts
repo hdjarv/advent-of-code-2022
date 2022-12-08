@@ -30,6 +30,15 @@ export const findMinMaxInRange = (
 export const removeDuplicatesFromArray = <T>(array: T[]): T[] =>
   array.filter((value, index, input) => input.indexOf(value) === index);
 
+export const multiplyRange = (numbers: number[], start: number = 0, end: number = numbers.length): number => {
+  let result = 1;
+  for (let i = start; i < end; i++) {
+    result *= numbers[i];
+  }
+
+  return result;
+};
+
 export const sumRange = (numbers: number[], start: number = 0, end: number = numbers.length): number => {
   let result = 0;
   for (let i = start; i < end; i++) {
