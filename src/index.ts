@@ -10,6 +10,8 @@ if (process.argv.length < 3) {
 const dayNo = strToNum(process.argv[2]);
 const dayModule = `day-${dayNo < 10 ? `0${dayNo}` : dayNo}`;
 const inputFileCandidates = [
+  join(__dirname, "inputs", dayModule + "-input-test.txt"),
+  join(__dirname, "..", "inputs", dayModule + "-input-test.txt"),
   join(__dirname, "inputs", dayModule + "-input.txt"),
   join(__dirname, "..", "inputs", dayModule + "-input.txt"),
 ];
